@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+nav {
+  background-color: #2b2b2b;
+  color: white;
+  font-size: 13px;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+li {
+  color: white;
+}
+
+button {
+  margin: 0rem;
+  padding: 0.5rem 1rem;
+  background: white;
+  border: 0.1rem solid black;
+  color: black;
+  border-radius: 0.3rem;
+}
+
+#facts {
+  background-image: url(https://livedemo00.template-help.com/wt_prod-20010/images/parallax-counter.jpg);
+  color: white;
+}
+
+main button {
+  padding: 0.5rem 1rem;
+  background: #de3139;
+  border: 0.3rem solid #de3139;
+  border-radius: 0.3rem;
+  color: white;
+}
+
+#slide {
+  background-image: url(https://livedemo00.template-help.com/wt_prod-20010/images/slider-light-slide-1-1920x776.jpg);
+}
+
+form {
+  background-color: #f5f6fa;
+}
+
+.footer-gallery {
+  width: 100px;
+  height: 100px;
+}
+
+.list li {
+  display: inline;
+}
+
+#footer {
+  background-color: #262626;
+}
+
+#footer p {
+  color: #a8a8a8;
+}
+
+#footer h3 {
+  color: #a8a8a8;
+}
+
+#footer a {
+  color: #f4f4f4;
+}
+
+#start-learn {
+  background-color: #262626;
+}
+#start-learn h2 {
+  color: #f4f4f4;
+}
+
+#mover {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+}
