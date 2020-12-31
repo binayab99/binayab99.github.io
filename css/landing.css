@@ -59,12 +59,25 @@ main button:hover {
   color: white;
 }
 
+#nav-top {
+  text-align: center;
+}
+
+#nav-top li {
+  padding: 1.2rem 2rem;
+  font-size: 1rem;
+}
+
 #slide {
   color: white;
   padding: 20rem;
   border: none;
   margin: none;
   background-image: url(https://livedemo00.template-help.com/wt_prod-20010/images/slider-light-slide-1-1920x776.jpg);
+}
+
+#slide h1 {
+  font-size: 4rem;
 }
 
 #welcome {
