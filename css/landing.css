@@ -54,8 +54,21 @@ main button {
   color: white;
 }
 
+main button:hover {
+  background: #de3139;
+  color: white;
+}
+
 #slide {
+  color: white;
+  padding: 20rem;
+  border: none;
+  margin: none;
   background-image: url(https://livedemo00.template-help.com/wt_prod-20010/images/slider-light-slide-1-1920x776.jpg);
+}
+
+#welcome {
+  padding: 10rem 0rem;
 }
 
 form {
@@ -98,4 +111,12 @@ form {
   position: fixed;
   bottom: 2%;
   right: 2%;
+}
+
+#groups img {
+  border-radius: 0.5rem;
+}
+
+a {
+  text-decoration: none;
 }
