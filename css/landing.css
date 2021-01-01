@@ -1,20 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+* {
+  margin: none;
+  border: none;
+  padding: none;
+  box-sizing: border-box;
+}
+
 html {
   font-size: 100%;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  margin: none;
-  padding: none;
-  box-sizing: border-box;
 }
 
 h1,
 h2,
 h3 {
   font-family: "Times New Roman", Times, serif;
+}
+
+#booking {
+  display: flex;
+  width: 100%;
+  background-color: lightgreen;
+}
+
+#logo,
+#info,
+#booking-button {
+  display: flex;
+}
+
+#logo {
+  flex: 1;
+}
+
+#info {
+  flex: 2;
+  align-items: center;
+}
+
+#booking-button {
+  flex: 1;
+  align-items: center;
+}
+
+#info a {
+  color: white;
+}
+
+#info a:hover {
+  color: #de3139;
 }
 
 nav {
