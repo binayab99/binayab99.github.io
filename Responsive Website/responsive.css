@@ -66,16 +66,20 @@ nav {
   align-items: center;
 }
 
-.cover img {
+.cover {
+  display: flex;
+  flex: 1;
   height: 60vh;
+  justify-content: center;
+}
+
+.cover img {
+  height: 100%;
   filter: drop-shadow(0px 5px 3px black);
+  animation: drop 3s ease;
 }
 
 .introduction {
-  flex: 1;
-}
-
-.cover {
   flex: 1;
 }
 
@@ -84,6 +88,7 @@ nav {
   font-weight: 500;
   background: linear-gradient(to right, #494964, #6f6f89);
   -webkit-background-clip: text;
+  background-clip: none; /* For compatibility reasons */
   -webkit-text-fill-color: transparent;
 }
 
@@ -120,8 +125,8 @@ nav {
 
 .big-circle {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0%;
+  right: 0%;
   z-index: -1;
   opacity: 0.5;
   height: 80%;
@@ -129,4 +134,79 @@ nav {
 
 .medium-circle {
   position: absolute;
+  top: 50%;
+  right: 40%;
+  z-index: 1;
+  opacity: 0.4;
+}
+
+.small-circle {
+  position: absolute;
+  top: 75%;
+  right: 65%;
+  z-index: 1;
+}
+
+.laptop-select {
+  display: flex;
+  width: 15%;
+  justify-content: space-around;
+  position: absolute;
+  right: 23%;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  header {
+    width: 95%;
+  }
+  .presentation {
+    flex-direction: column;
+  }
+
+  .introduction {
+    margin: 5vh;
+    text-align: center;
+  }
+
+  .nav-link {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .intro-text h1 {
+    font-size: 30px;
+  }
+
+  .intro-text p {
+    font-size: 18px;
+  }
+
+  .cta {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0px 0px 0px;
+  }
+
+  .cover img {
+    height: 80%;
+  }
+
+  .laptop-select {
+    bottom: 2%;
+    right: 50%;
+    width: 50%;
+    transform: translate(50%, 5%);
+  }
 }
