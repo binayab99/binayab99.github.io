@@ -35,6 +35,8 @@ header {
 .logo {
   font-weight: 400;
   margin: 5px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 nav {
@@ -51,6 +53,20 @@ nav {
   text-decoration: none;
   color: #5f5f79;
   font-size: 18px;
+}
+
+.hamburger {
+  position: absolute;
+  top: 8%;
+  left: 10%;
+  display: none;
+}
+
+.line {
+  width: 25px;
+  height: 5px;
+  margin: 5px;
+  background-color: rgb(226, 226, 226);
 }
 
 .cart {
@@ -171,6 +187,7 @@ nav {
   header {
     width: 95%;
   }
+
   .presentation {
     flex-direction: column;
   }
@@ -208,5 +225,15 @@ nav {
     right: 50%;
     width: 50%;
     transform: translate(50%, 5%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 90%;
+  }
+  .logo-container {
+    flex-direction: column;
+    margin-top: 20px;
   }
 }
