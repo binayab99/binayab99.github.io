@@ -55,23 +55,23 @@ nav {
   font-size: 18px;
 }
 
-.hamburger {
-  position: absolute;
-  top: 8%;
-  left: 10%;
-  display: none;
-}
-
-.line {
-  width: 25px;
-  height: 5px;
-  margin: 5px;
-  background-color: rgb(226, 226, 226);
-}
-
 .cart {
   flex: 1;
   justify-content: flex-end;
+}
+
+.hamburger {
+  width: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: rgb(226, 226, 226);
+  z-index: 2;
 }
 
 .presentation {
@@ -188,6 +188,10 @@ nav {
     width: 95%;
   }
 
+  .logo-container h4 {
+    text-align: center;
+  }
+
   .presentation {
     flex-direction: column;
   }
@@ -230,11 +234,47 @@ nav {
 
 @media screen and (max-width: 768px) {
   header {
-    width: 90%;
+    width: 75%;
+  }
+
+  body {
+    overflow-x: hidden;
   }
 
   .logo-container {
     flex-direction: column;
-    margin-top: 20px;
   }
+
+  .logo-container h4 {
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .cart {
+    position: absolute;
+    top: 3.1%;
+    right: 30%;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    top: 0vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
 }
