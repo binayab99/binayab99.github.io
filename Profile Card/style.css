@@ -11,6 +11,7 @@ body {
   font-size: 18px;
   background: hsl(185, 75%, 39%);
   overflow: hidden;
+  text-align: center;
 }
 
 main {
@@ -28,23 +29,6 @@ main {
   z-index: 1;
 }
 
-.info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.social {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.follow {
-  align-items: center;
-}
-
 .card img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -59,21 +43,45 @@ main {
   transform: translate(-50%, -50%);
 }
 
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid hsl(0, 0%, 63%);
+}
+
+.social .follow,
+.likes,
+.photos {
+  padding-top: 20px;
+}
+
+.follow {
+  align-items: center;
+}
+
 h3 {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.3rem;
 }
 
 h4 {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 p {
-  font-size: 10px;
+  font-size: 0.65rem;
   font-weight: 400;
   letter-spacing: 2px;
-  color: hsl(0, 0%, 59%);
+  color: hsl(0, 0%, 63%);
   padding-bottom: 20px;
 }
 
@@ -92,10 +100,17 @@ p {
 }
 
 .attribution {
+  font-size: 11px;
+  text-align: center;
   position: absolute;
   bottom: 1%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: none;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 .top img {
@@ -111,7 +126,4 @@ p {
 }
 
 @media (max-width: 375px) {
-  body {
-    overflow: hidden;
-  }
 }
