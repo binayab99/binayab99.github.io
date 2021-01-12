@@ -12,6 +12,11 @@ body {
   background: hsl(185, 75%, 39%);
   overflow: hidden;
   text-align: center;
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: -60% 50%, 140% -50%;
+  background-size: auto, auto;
 }
 
 main {
@@ -113,17 +118,7 @@ p {
   color: hsl(228, 45%, 44%);
 }
 
-.top img {
-  position: absolute;
-  top: -50%;
-  left: -10%;
-}
-
-.bottom img {
-  position: absolute;
-  bottom: -50%;
-  right: -10%;
-}
-
 @media (max-width: 375px) {
+  body {
+  }
 }
