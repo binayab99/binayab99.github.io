@@ -136,10 +136,12 @@ main {
   }
 
   .mockup {
+    text-align: center;
   }
 
   .mockup img {
     width: 60%;
+    margin: auto;
   }
 
   .intro {
@@ -160,13 +162,18 @@ main {
   }
 
   .register {
-    margin: auto;
+    margin-top: 20px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    font-size: 15px;
+    padding: 10px 15px 10px 15px;
   }
 
   .icons {
-    bottom: 5%;
+    bottom: 3%;
     left: 35%;
-    transform: translate(-5%, 35%);
+    transform: translate(-3%, -35%);
   }
 }
