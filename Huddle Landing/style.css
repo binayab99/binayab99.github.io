@@ -113,6 +113,11 @@ main {
     background-image: url(images/bg-mobile.svg);
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
+  }
+
+  .logo img {
+    width: 50%;
   }
 
   main {
@@ -120,9 +125,16 @@ main {
     flex-direction: column;
   }
 
+  .mockup {
+    align-items: center;
+    justify-content: center;
+  }
+
   .mockup img {
-    width: 100%;
+    width: 80%;
     height: auto;
+    align-items: center;
+    justify-content: center;
   }
 
   .intro h1 {
@@ -134,11 +146,12 @@ main {
   }
 
   .register {
+    width: 80%;
   }
 
   .icons {
     bottom: 3%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-25%, 150%);
   }
 }
