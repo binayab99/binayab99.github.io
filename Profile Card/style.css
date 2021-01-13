@@ -122,13 +122,10 @@ p {
   body {
     background-position: -170px -150px, 200px 500px;
     background-size: 300px 300px;
-    width: 100%;
   }
 
   .container {
-    position: absolute;
-    width: 90%;
-    vertical-align: middle;
+    width: 85%;
   }
 
   .card img {
