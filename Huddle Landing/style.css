@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  min-height: 100%;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background: hsl(257, 40%, 49%);
@@ -14,7 +19,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  height: 100%;
 }
 
 .logo {
@@ -40,6 +44,7 @@ main {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   width: 400px;
+  font-size: 35px;
 }
 
 .intro p {
@@ -114,12 +119,11 @@ main {
   color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1000px) {
   body {
     background-image: url(images/bg-mobile.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
   }
 
   .logo img {
@@ -132,32 +136,37 @@ main {
   }
 
   .mockup {
-    align-items: center;
-    justify-content: center;
   }
 
   .mockup img {
-    width: 80%;
-    height: auto;
-    align-items: center;
-    justify-content: center;
+    width: 60%;
+  }
+
+  .intro {
+    padding-left: 0;
+    margin-top: 20px;
   }
 
   .intro h1 {
     text-align: center;
+    width: 300px;
+    font-size: 25px;
   }
 
   .intro p {
     text-align: center;
+    width: 300px;
+    margin-bottom: 20px;
   }
 
   .register {
-    width: 80%;
+    margin: auto;
+    text-align: center;
   }
 
   .icons {
-    bottom: 3%;
-    left: 50%;
-    transform: translate(-25%, 150%);
+    bottom: 5%;
+    left: 35%;
+    transform: translate(-5%, 35%);
   }
 }
