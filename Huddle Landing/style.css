@@ -87,6 +87,11 @@ main {
   padding: 10px;
 }
 
+#facebook,
+#twitter {
+  margin-right: 10px;
+}
+
 #facebook:hover,
 #twitter:hover,
 #instagram:hover {
