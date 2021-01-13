@@ -15,7 +15,7 @@ body {
   background-image: url(images/bg-pattern-top.svg),
     url(images/bg-pattern-bottom.svg);
   background-repeat: no-repeat, no-repeat;
-  background-position: -60% 50%, 140% -50%;
+  background-position: -40% 50%, 140% -50%;
   background-size: auto, auto;
 }
 
@@ -118,7 +118,20 @@ p {
   color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   body {
+    background-position: -170px -150px, 200px 500px;
+    background-size: 300px 300px;
+    width: 100%;
+  }
+
+  .container {
+    position: absolute;
+    width: 90%;
+    vertical-align: middle;
+  }
+
+  .card img {
+    width: 100%;
   }
 }
