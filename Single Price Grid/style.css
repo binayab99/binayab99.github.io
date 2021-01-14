@@ -18,8 +18,18 @@ body {
   color: white;
 }
 
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+
+  border: 1px solid black;
+}
+
 .table-top {
   background: white;
+  border: 1px dashed teal;
+
+  grid-column: 1 / span 2;
 }
 
 .table-top h2 {
@@ -36,6 +46,7 @@ body {
 
 .table-left {
   background: hsl(179, 62%, 43%);
+  border: 1px dashed lime;
 }
 
 .table-left h4 {
@@ -44,6 +55,11 @@ body {
 
 .table-right {
   background: hsl(179, 47%, 52%);
+  border: 1px dashed darksalmon;
+}
+
+.table-right ul li {
+  list-style: none;
 }
 
 footer {
