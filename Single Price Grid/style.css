@@ -6,60 +6,94 @@
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 html,
 body {
   min-height: 100%;
+  margin: 8rem;
 }
 
 body {
   font-family: "Karla", sans-serif;
   font-size: 16px;
+  font-weight: 400;
   background: hsl(204, 43%, 93%);
   color: white;
+  line-height: 1.3rem;
 }
 
-.grid-container {
-  display: -ms-grid;
+.container {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 0fr);
+}
 
+.table-top,
+.table-left,
+.table-right {
+  padding: 2.5rem;
   border: 1px solid black;
 }
 
 .table-top {
   background: white;
-  border: 1px dashed teal;
-
-  grid-column: 1 / span 2;
+  color: hsl(214, 6%, 76%);
+  grid-column: 1 / span 3;
 }
 
-.table-top h2 {
+.join p {
   color: hsl(179, 62%, 43%);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 
-.table-top p:nth-child(2) {
-  color: hsl(70, 59%, 59%);
-}
-
-.table-top p:nth-child(3) {
-  color: hsl(213, 7%, 71%);
+.guarantee p {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .table-left {
   background: hsl(179, 62%, 43%);
-  border: 1px dashed lime;
+  grid-column: 2 / 2;
+  grid-row: 2 / 3;
 }
 
-.table-left h4 {
+.subscription {
+  margin-bottom: 1.5rem;
+}
+
+.signup .button {
   background: hsl(71, 73%, 54%);
+  color: white;
+  border: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  border-radius: 5px;
+  font-weight: 700;
+  margin-top: 2rem;
 }
 
 .table-right {
   background: hsl(179, 47%, 52%);
-  border: 1px dashed darksalmon;
 }
 
-.table-right ul li {
+.table-right p {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.table-right li {
   list-style: none;
+  color: hsl(177, 74%, 77%);
+  font-size: 0.8rem;
 }
 
 footer {
