@@ -1,9 +1,9 @@
 @import "globals";
 
 .text {
-  margin: 0 auto;
   text-align: center;
   max-width: 35rem;
+  margin: 0 auto; // Helps to center the text horizontally after the max-width value
 }
 
 .heading1,
