@@ -15,10 +15,14 @@
 }
 
 .description {
+  padding: 0rem 30rem;
 }
 
 .container_main {
-  display: inline-block;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .container_left,
