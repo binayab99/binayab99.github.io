@@ -1,0 +1,67 @@
+@import "globals";
+
+.text {
+  text-align: center;
+}
+
+.heading1,
+.heading2 {
+  font-size: 2rem;
+  color: $very_dark_blue;
+}
+
+.description {
+}
+
+.container_left,
+.container_top,
+.container_bottom,
+.container_right {
+  padding: 1.5rem;
+  width: 25rem;
+  height: 15rem;
+  //   border: 1px solid black;
+  background: white;
+  border-radius: 5px;
+  filter: drop-shadow(0px 5px 3px $very_dark_blue);
+}
+
+.container_left {
+  border-top: 5px solid $cyan;
+}
+
+.container_top {
+  border-top: 5px solid $red;
+}
+
+.container_bottom {
+  border-top: 5px solid $orange;
+}
+
+.container_right {
+  border-top: 5px solid $blue;
+}
+
+.image_container_left,
+.image_container_top,
+.image_container_bottom,
+.image_container_right {
+  text-align: right;
+}
+
+.container_heading {
+  color: $very_dark_blue;
+}
+
+footer {
+  display: none;
+  font-size: 15px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
