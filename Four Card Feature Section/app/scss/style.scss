@@ -1,7 +1,9 @@
 @import "globals";
 
 .text {
+  margin: 0 auto;
   text-align: center;
+  max-width: 35rem;
 }
 
 .heading1,
@@ -14,21 +16,14 @@
   font-weight: 600;
 }
 
-.description {
-  padding: 0rem 30rem;
-}
-
-.container_main {
+.cards-container {
   display: grid;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
-.container_left,
-.container_top,
-.container_bottom,
-.container_right {
+.card {
   padding: 1.5rem;
   width: 25rem;
   height: 15rem;
@@ -38,19 +33,19 @@
   margin: 1.5rem;
 }
 
-.container_left {
+#supervisor {
   border-top: 5px solid $cyan;
 }
 
-.container_top {
+#teambuilder {
   border-top: 5px solid $red;
 }
 
-.container_bottom {
+#karma {
   border-top: 5px solid $orange;
 }
 
-.container_right {
+#calculator {
   border-top: 5px solid $blue;
 }
 
@@ -58,10 +53,7 @@
   font-weight: 200;
 }
 
-.image_container_left,
-.image_container_top,
-.image_container_bottom,
-.image_container_right {
+.image_container {
   text-align: right;
 }
 
