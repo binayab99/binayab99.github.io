@@ -16,7 +16,7 @@
   font-weight: 600;
 }
 
-.cards-container {
+.cards {
   display: grid;
   align-items: center;
   justify-content: center;
@@ -50,15 +50,15 @@
   border-top: 5px solid $blue;
 }
 
-.container_paragraph {
+.cards_paragraph {
   font-weight: 200;
 }
 
-.image_container {
+.card_image {
   text-align: right;
 }
 
-.container_heading {
+.card_heading {
   color: $very_dark_blue;
 }
 
