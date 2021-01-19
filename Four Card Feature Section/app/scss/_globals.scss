@@ -17,7 +17,7 @@ body {
 html {
   font-size: 100%;
   box-sizing: border-box;
-  display: table;
+  display: table; // Place all HTML items in a table
   margin: auto;
 }
 
@@ -28,12 +28,8 @@ html {
 }
 
 body {
-  display: table-cell;
-  vertical-align: middle;
-  // margin-top: 0;
-  // margin-bottom: 0;
-  // margin-left: 5%;
-  // margin-right: 5%;
+  display: table-cell; // Place body items in a cell of the HTML table
+  vertical-align: middle; // Align all items in the body at the center of the page
   padding: 0;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 400;
