@@ -12,12 +12,19 @@
   color: $very_dark_blue;
 
   @media (min-width: 1200px) {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 }
 
 .heading2 {
   font-weight: 600;
+}
+
+.description {
+  @media (max-width: 1200px) {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
 }
 
 .cards {
@@ -86,6 +93,7 @@
   position: relative;
   text-align: right;
   bottom: 0%;
+  transition: 0.5s;
 }
 
 .card_heading {
