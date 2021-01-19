@@ -24,6 +24,10 @@
   flex-direction: column;
 }
 
+.cards {
+  display: flex;
+}
+
 .card {
   color: $white;
   background: $very_dark_magenta;
@@ -31,7 +35,7 @@
   width: 21rem;
   height: 15rem;
   border-radius: 5px;
-  margin: 3rem auto;
+  margin: 2px;
 }
 
 .card p:nth-child(2) {
