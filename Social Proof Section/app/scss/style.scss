@@ -1,5 +1,32 @@
 @import "global";
 
+.heading {
+  font-weight: 700;
+  color: $very_dark_magenta;
+}
+
+.description {
+  color: $dark_grayish_magenta;
+}
+
+.ratings {
+  font-weight: 700;
+  color: $very_dark_magenta;
+}
+
+.card {
+  color: $white;
+  background: $very_dark_magenta;
+}
+
+.card p:nth-child(2) {
+  font-weight: 500;
+}
+
+.card p:nth-child(3) {
+  color: $soft_pink;
+}
+
 .card img {
   border-radius: 50%;
 }
