@@ -3,7 +3,10 @@
 .text {
   text-align: center;
   max-width: 35rem;
-  margin: 4rem auto; // Helps to center the text horizontally after the max-width value
+
+  margin-left: auto; // Helps to center the text horizontally after the max-width value
+  margin-right: auto;
+  margin-bottom: 5rem;
 }
 
 .heading1,
@@ -11,12 +14,12 @@
   font-size: 1.5rem;
   color: $very_dark_blue;
 
-  @media (min-width: 1200px) {
-    font-size: 2.2rem;
+  @media (max-width: 375px) {
+    font-size: 1.5rem;
   }
-}
 
-.heading1 {
+  @media (min-width: 1200px) {
+  }
 }
 
 .heading2 {
@@ -26,9 +29,16 @@
 .description {
   // font-size: 0.9rem;
 
-  @media (max-width: 1200px) {
-    margin-left: 5rem;
-    margin-right: 5rem;
+  @media (max-width: 375px) {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 320px) {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 0.8rem;
   }
 }
 
@@ -45,14 +55,11 @@
   height: 15rem;
   background: white;
   border-radius: 5px;
-  filter: drop-shadow(0px 0px 0.5rem $grayish_blue);
-  // box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  //   0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-  //   0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  //   0 100px 80px rgba(0, 0, 0, 0.12);
+  // filter: drop-shadow(0px 0px 0.4rem $grayish_blue);
+  box-shadow: 0px 15px 15px -10px $grayish_blue;
   transition: 0.5s;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1000px) {
     grid-template-columns: repeat(2fr 2fr 2fr);
     grid-template-rows: repeat(1fr 1fr 1fr 1fr);
   }
@@ -61,14 +68,14 @@
 #supervisor {
   border-top: 5px solid $cyan;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1000px) {
     grid-column: 1 / 1;
     grid-row: 2 / span 3;
   }
 }
 
 #supervisor:hover {
-  @media (min-width: 1200px) {
+  @media (min-width: 1000px) {
     transform: scale(1) translateX(-20px);
   }
 }
@@ -76,14 +83,14 @@
 #teambuilder {
   border-top: 5px solid $red;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1000px) {
     grid-column: 2 / 2;
     grid-row: 1 / span 2;
   }
 }
 
 #teambuilder:hover {
-  @media (min-width: 1200px) {
+  @media (min-width: 1000px) {
     transform: scale(1) translateY(-20px);
   }
 }
@@ -91,14 +98,14 @@
 #karma {
   border-top: 5px solid $orange;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1000px) {
     grid-column: 2 / 2;
     grid-row: 3 / span 4;
   }
 }
 
 #karma:hover {
-  @media (min-width: 1200px) {
+  @media (min-width: 1000px) {
     transform: scale(1) translateY(20px);
   }
 }
@@ -106,14 +113,14 @@
 #calculator {
   border-top: 5px solid $blue;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1000px) {
     grid-column: 3 / 3;
     grid-row: 2 / span 3;
   }
 }
 
 #calculator:hover {
-  @media (min-width: 1200px) {
+  @media (min-width: 1000px) {
     transform: scale(1) translateX(20px);
   }
 }
