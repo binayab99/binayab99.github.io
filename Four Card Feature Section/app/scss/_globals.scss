@@ -11,10 +11,8 @@ $very_light_gray: hsl(0, 0%, 98%);
 
 html,
 body {
-  height: 100%;
-
-  @media (max-width: 768px) {
-    transform: scale(0.95);
+  @media (min-width: 1000px) {
+    height: 100%;
   }
 }
 
@@ -23,6 +21,12 @@ html {
   box-sizing: border-box;
   display: table; // Place all HTML items in a table
   margin: auto;
+
+  @media (max-width: 320px) {
+    margin: none;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 *,
@@ -40,4 +44,12 @@ body {
   background: $very_light_gray;
   color: $grayish_blue;
   line-height: 1.3rem;
+
+  @media (max-width: 768px) {
+    transform: scale(0.9);
+  }
+
+  @media (max-width: 320px) {
+    transform: scale(0.8);
+  }
 }
