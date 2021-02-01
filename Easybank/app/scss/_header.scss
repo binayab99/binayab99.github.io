@@ -17,20 +17,35 @@
       width: 26px;
       height: 2px;
       background-color: $darkBlue;
+      transition: all 300ms ease-in-out;
+      transform-origin: 3px 1px;
 
       &:not(:last-child) {
-        margin-bottom: 3px;
+        margin-bottom: 5px;
+      }
+    }
+
+    &.open {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+
+      > span:last-child {
+        transform: rotate(-45deg);
       }
     }
   }
 
   &__links {
-    border: 1px solid red;
     a {
       position: relative;
       font-size: $font-small;
       color: $grayishBlue;
-      transition: color 200ms ease-in-out;
+      transition: color 300ms ease-in-out;
 
       &:not(:last-child) {
         margin-right: 32px;
@@ -46,6 +61,7 @@
         bottom: -30px;
         background: linear-gradient(to right, $limeGreen, $brightCyan);
         opacity: 0;
+        transition: opacity 300ms ease-in-out;
       }
 
       &:hover {
@@ -61,5 +77,10 @@
   &__cta {
     font-size: $font-small;
     color: $white;
+    transition: opacity 300ms ease-in-out;
+
+    &:hover {
+      opacity: 0.75;
+    }
   }
 }
