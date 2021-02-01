@@ -1,6 +1,11 @@
 {
     "cSpell.words": [
         "Easybank",
-        "flexbox"
+        "flexbox",
+        "mixins",
+        "xlarge"
+    ],
+    "cSpell.ignoreWords": [
+        "mixins"
     ]
 }
