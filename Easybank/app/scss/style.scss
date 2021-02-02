@@ -1,4 +1,8 @@
+// Functional SASS styles
 @import "variables";
 @import "mixins";
+@import "animations";
+
+// Elements and components SASS styles
 @import "globals";
 @import "header";
