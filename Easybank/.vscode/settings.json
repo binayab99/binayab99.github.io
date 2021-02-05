@@ -5,6 +5,7 @@
         "fade",
         "flexbox",
         "mixins",
+        "noscroll",
         "xlarge"
     ],
     "cSpell.ignoreWords": [
