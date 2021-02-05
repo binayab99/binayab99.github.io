@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  z-index: 1;
   // Hamburger open styles
   &.open {
     .header__toggle {
@@ -40,6 +42,7 @@
 
   &__toggle {
     //Mobile Menu Toggle
+
     > span {
       display: block;
       width: 26px;
