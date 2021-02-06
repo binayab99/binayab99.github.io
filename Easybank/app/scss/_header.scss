@@ -80,7 +80,7 @@
   &__links {
     a {
       position: relative;
-      font-size: $font-small;
+      font-size: $font-sm;
       color: $grayishBlue;
       transition: color 300ms ease-in-out;
 
@@ -108,16 +108,6 @@
           opacity: 1;
         }
       }
-    }
-  }
-
-  &__cta {
-    font-size: $font-small;
-    color: $white;
-    transition: opacity 300ms ease-in-out;
-
-    &:hover {
-      opacity: 0.75;
     }
   }
 }
