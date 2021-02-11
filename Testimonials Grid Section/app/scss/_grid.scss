@@ -1,0 +1,36 @@
+.testimonials {
+  display: grid;
+  grid-template-columns: 4fr;
+  grid-template-rows: 2fr;
+  grid-template-areas: "daniel jonathan kira" "jeanette patrick kira";
+  gap: 1rem;
+}
+
+.daniel {
+  background-image: url(/images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-color: $moderateViolet;
+  color: $white;
+  padding: 0.75rem 1rem;
+}
+
+.jonathan {
+  background-color: $veryDarkGrayishBlue;
+  color: $white;
+}
+
+.jeanette {
+  background-color: $white;
+  color: $veryDarkGrayishBlue;
+}
+
+.patrick {
+  background-color: $veryDarkBlackishBlue;
+  color: $white;
+}
+
+.kira {
+  background-color: $white;
+  color: $veryDarkGrayishBlue;
+}
