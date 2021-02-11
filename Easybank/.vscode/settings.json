@@ -4,8 +4,10 @@
         "elems",
         "fade",
         "flexbox",
+        "minmax",
         "mixins",
         "noscroll",
+        "pinterest",
         "xlarge"
     ],
     "cSpell.ignoreWords": [
