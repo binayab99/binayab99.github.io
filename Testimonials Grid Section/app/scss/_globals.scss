@@ -1,6 +1,14 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+
+  display: table;
+  margin: auto;
+}
+
+html,
+body {
+  min-height: 100%;
 }
 
 *,
@@ -13,8 +21,22 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 0.8125rem;
   font-weight: 500;
-  margin: 10rem;
   background-color: $lightGrayishBlue;
+
+  @include breakpoint-up(desktop) {
+    display: table-cell;
+    vertical-align: middle;
+    max-width: 90rem;
+    // overflow-y: hidden;
+  }
+}
+
+.container {
+  margin: 5rem 1.5rem;
+
+  @include breakpoint-up(desktop) {
+    margin: 10rem;
+  }
 }
 
 img {
