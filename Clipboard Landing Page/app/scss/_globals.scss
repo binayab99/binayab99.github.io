@@ -25,6 +25,8 @@ body {
   align-self: center;
   align-content: center;
 
+  overflow-x: hidden;
+
   background-image: url(/images/bg-header-mobile.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -72,6 +74,10 @@ button {
   margin-right: 0.5rem;
   // margin-bottom: 5rem;
   margin-left: 0.5rem;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .button__ios {
@@ -82,4 +88,8 @@ button {
 .button__mac {
   background-color: $lightBlue;
   box-shadow: 0px 2px 12px $lightBlue;
+}
+
+li {
+  list-style: none;
 }

@@ -3,14 +3,69 @@ main {
 }
 
 .container__computer {
-  //   display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "image text";
+
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 .container__computer__image {
-  position: absolute;
-  left: -2rem;
+  grid-area: image;
+
+  position: relative;
+  left: -7rem;
 }
 
 .container__computer__text {
-  //   width: 50%;
+  grid-area: text;
+
+  text-align: left;
+
+  padding-top: 4rem;
+}
+
+.container__computer__paragraph {
+  width: 21rem;
+
+  padding-left: 0;
+}
+
+.workflow__items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__blacklists,
+  &__snippets,
+  &__preview {
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 3rem;
+  }
+
+  &__blacklists {
+    background-image: url("/images/icon-blacklist.svg");
+  }
+
+  &__snippets {
+    background-image: url("/images/icon-text.svg");
+  }
+
+  &__preview {
+    background-image: url("/images/icon-preview.svg");
+  }
+}
+
+.workflow__items p {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.workflow__partners {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
