@@ -17,7 +17,6 @@ body {
 body {
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 400;
-  // font-size: 0.85rem;
   color: $grayishBlue;
 
   text-align: center;
@@ -70,13 +69,14 @@ button {
 
   padding: 0.75rem 1.5rem;
 
-  // margin-top: 1.625rem;
   margin-right: 0.5rem;
-  // margin-bottom: 5rem;
   margin-left: 0.5rem;
+
+  transition: opacity 300ms ease-in-out;
 
   &:hover {
     cursor: pointer;
+    opacity: 0.8;
   }
 }
 
@@ -91,5 +91,14 @@ button {
 }
 
 li {
+  display: inline;
+
   list-style: none;
+
+  transition: color 300ms ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    color: $strongCyan;
+  }
 }
