@@ -34,27 +34,34 @@ main {
 }
 
 .workflow__items {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "blacklists snippets preview";
+  gap: 2rem;
 
   &__blacklists,
   &__snippets,
   &__preview {
     background-repeat: no-repeat;
     background-position: top;
+
     padding-top: 3rem;
   }
 
   &__blacklists {
+    grid-area: blacklists;
+
     background-image: url("/images/icon-blacklist.svg");
   }
 
   &__snippets {
+    grid-area: snippets;
     background-image: url("/images/icon-text.svg");
   }
 
   &__preview {
+    grid-area: preview;
     background-image: url("/images/icon-preview.svg");
   }
 }
