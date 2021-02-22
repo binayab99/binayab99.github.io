@@ -5,9 +5,15 @@
     background-position: bottom;
     background-size: contain;
 
+    padding-bottom: 10rem;
+
+    & > img {
+      width: 32rem;
+    }
     &__text {
       & > h1 {
         line-height: 2;
+        padding-top: 2rem;
         padding-bottom: 2rem;
         max-width: 35rem;
         margin: auto;
@@ -15,10 +21,18 @@
 
       & > p {
         line-height: 1.7;
-        padding-bottom: 1.7rem;
+        padding-bottom: 2rem;
         max-width: 26rem;
         margin: auto;
       }
+    }
+  }
+
+  &__grid {
+    display: flex;
+    background-color: $darkBlueMain;
+
+    &__item {
     }
   }
 }
