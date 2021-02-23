@@ -44,4 +44,26 @@
       margin-bottom: 5rem;
     }
   }
+
+  &__productive {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__image {
+      flex-grow: 1;
+      flex-basis: 50%;
+    }
+
+    &__text {
+      flex-grow: 1;
+      flex-basis: 50%;
+      text-align: left;
+
+      & > a {
+        text-decoration: underline;
+        color: $cyan;
+      }
+    }
+  }
 }
