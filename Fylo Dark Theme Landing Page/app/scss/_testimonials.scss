@@ -1,0 +1,48 @@
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  margin-bottom: 15rem;
+
+  padding-top: 2rem;
+
+  background-image: url("/images/bg-quotes.png");
+  background-repeat: no-repeat;
+  background-position: 8rem 0;
+
+  text-align: left;
+
+  &__items {
+    flex-grow: 1;
+    flex-basis: 33.33%;
+
+    max-width: 21rem;
+
+    background-color: $darkBlueTestimonials;
+
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+
+    z-index: 1;
+
+    &:not(:last-of-type) {
+      margin-right: 3rem;
+    }
+
+    &__info {
+      & > img {
+        border-radius: 50%;
+        width: 1.5rem;
+      }
+
+      & > h4 {
+        display: inline-block;
+      }
+
+      & > p {
+        display: inline-block;
+      }
+    }
+  }
+}

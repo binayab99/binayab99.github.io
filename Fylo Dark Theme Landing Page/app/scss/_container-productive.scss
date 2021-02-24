@@ -1,0 +1,27 @@
+.container-productive {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5rem;
+
+  &__image {
+    flex-grow: 1;
+    flex-basis: 50%;
+    max-width: fit-content;
+    margin-right: 2rem;
+  }
+
+  &__text {
+    flex-grow: 1;
+    flex-basis: 50%;
+    max-width: 30rem;
+    text-align: left;
+    padding-left: 2rem;
+
+    & > a {
+      color: $cyan;
+      border-bottom: 1px solid;
+      padding-bottom: 0.3rem;
+    }
+  }
+}

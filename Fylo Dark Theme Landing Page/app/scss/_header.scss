@@ -1,4 +1,6 @@
 .header {
+  background-color: $darkBlueIntroEmail;
+
   display: flex;
 
   padding: 3rem;
@@ -11,8 +13,12 @@
     justify-content: right;
     align-items: center;
 
+    & > a:hover {
+      border-bottom: 1px solid;
+    }
+
     & > a:not(:last-child) {
-      padding-right: 4rem;
+      margin-right: 4rem;
     }
   }
 }
