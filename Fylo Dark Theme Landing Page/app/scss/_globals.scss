@@ -8,10 +8,6 @@ html {
   box-sizing: border-box;
 }
 
-html,
-body {
-}
-
 h1,
 h2,
 h3,
@@ -34,7 +30,7 @@ body {
   font-size: 0.875rem;
   font-weight: 400;
   color: $white;
-  line-height: 1.3;
+  line-height: 1.5;
 
   text-align: center;
 
@@ -52,7 +48,23 @@ a {
 button {
   font-family: inherit;
   background-color: $cyan;
+  color: $white;
   border: none;
   padding: 0.8rem 3rem;
   border-radius: 10rem;
+}
+
+input {
+  border-radius: 5rem;
+  border: 0;
+  padding: 0.8rem 15rem 0.8rem 2rem;
+
+  margin-right: 2rem;
+  color: rgba($darkBlueIntroEmail, 0.5);
+  text-align: left;
+}
+
+footer {
+  background-color: $darkBlueFooter;
+  padding-top: 10rem;
 }
