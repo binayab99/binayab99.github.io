@@ -5,6 +5,17 @@
 
   padding: 3rem;
 
+  @include breakpoint-down(small) {
+    padding: 2rem 1.5rem;
+
+    img {
+      width: auto;
+      height: 1.5rem;
+      margin: auto;
+      margin-right: 3rem;
+    }
+  }
+
   &__nav {
     display: flex;
 
@@ -14,11 +25,16 @@
     align-items: center;
 
     & > a:hover {
-      border-bottom: 1px solid;
+      // border-bottom: 1px solid;
+      text-decoration: underline;
     }
 
     & > a:not(:last-child) {
       margin-right: 4rem;
+
+      @include breakpoint-down(small) {
+        margin-right: 1rem;
+      }
     }
   }
 }

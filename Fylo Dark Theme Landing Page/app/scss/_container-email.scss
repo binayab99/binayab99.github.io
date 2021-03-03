@@ -20,5 +20,10 @@
 
     padding: 3rem;
     border-radius: 1rem;
+
+    @include breakpoint-down(small) {
+      max-width: 20rem;
+      height: 20rem;
+    }
   }
 }

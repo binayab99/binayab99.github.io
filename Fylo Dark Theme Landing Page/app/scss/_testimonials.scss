@@ -14,6 +14,10 @@
 
   text-align: left;
 
+  @include breakpoint-down(small) {
+    background-position: 2.5rem 0;
+  }
+
   &__items {
     flex-grow: 1;
     flex-basis: 33.33%;
@@ -26,8 +30,19 @@
 
     z-index: 1;
 
+    @include breakpoint-down(small) {
+      flex-basis: 60%;
+      margin-bottom: 2rem;
+      max-width: 19rem;
+      font-size: 0.7rem;
+    }
+
     &:not(:last-of-type) {
       margin-right: 3rem;
+
+      @include breakpoint-down(small) {
+        margin-right: 0rem;
+      }
     }
 
     &__info {

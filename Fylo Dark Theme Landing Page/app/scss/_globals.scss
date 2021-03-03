@@ -44,13 +44,22 @@ a {
   color: $white;
 }
 
+ul {
+  margin: 0;
+}
+
 button {
   font-family: inherit;
-  background-color: $cyan;
+  background-image: linear-gradient(left, $cyan, $blue);
   color: $white;
   border: none;
   padding: 0.8rem 3rem;
   border-radius: 10rem;
+  transition: background-image 300ms ease-in-out;
+
+  @include breakpoint-down(small) {
+    padding: 0.8rem 5rem;
+  }
 
   &:focus {
     outline: none;
@@ -58,6 +67,7 @@ button {
 
   &:hover {
     cursor: pointer;
+    background-image: linear-gradient($cyan);
   }
 }
 
@@ -79,4 +89,5 @@ input {
 footer {
   background-color: $darkBlueFooter;
   padding-top: 10rem;
+  padding-bottom: 10rem;
 }

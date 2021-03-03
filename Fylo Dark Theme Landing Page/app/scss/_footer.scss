@@ -37,6 +37,10 @@ footer {
         height: 1.5rem;
         width: auto;
       }
+
+      > a:hover {
+        font-weight: 700;
+      }
     }
 
     .contact {
@@ -52,23 +56,39 @@ footer {
         > img {
           height: 0.3rem;
         }
+
+        > a:hover {
+          font-weight: 700;
+        }
       }
 
       .email {
         height: 1rem;
         padding-right: 2rem;
+
+        > a:hover {
+          font-weight: 700;
+        }
       }
     }
 
     li {
-      // align-items: flex-start;
       list-style-type: none;
-      // align-content: flex-start;
+      margin-bottom: 1rem;
+
+      &:hover {
+        font-weight: 700;
+      }
     }
 
     ion-icon {
       font-size: 1.5rem;
-      padding-right: 1rem;
+      margin-right: 1rem;
+      transition: color 300ms ease-in-out;
+
+      &:hover {
+        color: $cyan;
+      }
     }
 
     .social {

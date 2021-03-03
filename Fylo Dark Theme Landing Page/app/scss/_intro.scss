@@ -5,12 +5,20 @@
   background-position: bottom;
   background-size: contain;
 
+  @include breakpoint-down(small) {
+    background-image: url("/images/bg-curvy-mobile.svg");
+  }
+
   // background-color: $darkBlueMain;
 
   padding-bottom: 10rem;
 
   & > img {
     width: 32rem;
+
+    @include breakpoint-down(small) {
+      width: 16rem;
+    }
   }
   &__text {
     & > h1 {
@@ -19,6 +27,10 @@
       padding-bottom: 2rem;
       max-width: 35rem;
       margin: auto;
+
+      @include breakpoint-down(small) {
+        max-width: 18rem;
+      }
     }
 
     & > p {
@@ -26,6 +38,10 @@
       padding-bottom: 2rem;
       max-width: 26rem;
       margin: auto;
+
+      @include breakpoint-down(small) {
+        max-width: 18rem;
+      }
     }
   }
 }

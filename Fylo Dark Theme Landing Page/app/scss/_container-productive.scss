@@ -9,6 +9,16 @@
     flex-basis: 50%;
     max-width: fit-content;
     margin-right: 2rem;
+
+    @include breakpoint-down(small) {
+      margin-right: 0;
+    }
+
+    > img {
+      @include breakpoint-down(small) {
+        width: 20rem;
+      }
+    }
   }
 
   &__text {
@@ -18,10 +28,26 @@
     text-align: left;
     padding-left: 2rem;
 
+    > h1 {
+      @include breakpoint-down(small) {
+        font-size: 1.16rem;
+      }
+    }
+
+    @include breakpoint-down(small) {
+      max-width: 20rem;
+      padding-left: 0;
+    }
+
     & > a {
       color: $cyan;
       border-bottom: 1px solid;
       padding-bottom: 0.3rem;
+      transition: color 300ms ease-in-out;
+
+      &:hover {
+        color: $white;
+      }
     }
   }
 }
