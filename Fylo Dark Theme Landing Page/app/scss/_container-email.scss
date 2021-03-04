@@ -21,9 +21,16 @@
     padding: 3rem;
     border-radius: 1rem;
 
-    @include breakpoint-down(small) {
+    @include breakpoint-down(medium) {
+      padding: 1.5rem;
       max-width: 20rem;
-      height: 25rem;
+      height: 20rem;
+
+      transform: translate(0%, -10%);
+
+      > button {
+        padding: 0.8rem 4.3rem;
+      }
     }
   }
 }

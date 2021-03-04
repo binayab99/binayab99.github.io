@@ -7,6 +7,8 @@
 
   @include breakpoint-down(small) {
     background-image: url("/images/bg-curvy-mobile.svg");
+    background-size: cover;
+    background-position: bottom center;
   }
 
   padding-bottom: 10rem;

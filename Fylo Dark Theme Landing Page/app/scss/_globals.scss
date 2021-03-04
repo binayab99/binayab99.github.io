@@ -46,6 +46,10 @@ a {
 
 ul {
   margin: 0;
+
+  @include breakpoint-down(small) {
+    padding: 0;
+  }
 }
 
 button {
@@ -79,6 +83,12 @@ input {
   margin-right: 2rem;
   color: rgba($darkBlueIntroEmail, 0.4);
   text-align: left;
+
+  @include breakpoint-down(medium) {
+    margin: auto auto 1.5rem auto;
+    padding: 0.8rem 1.5rem;
+    width: 16rem;
+  }
 
   &:focus {
     outline: none;

@@ -30,7 +30,7 @@
 
     z-index: 1;
 
-    @include breakpoint-down(small) {
+    @include breakpoint-down(medium) {
       flex-basis: 60%;
       margin-bottom: 2rem;
       max-width: 19rem;

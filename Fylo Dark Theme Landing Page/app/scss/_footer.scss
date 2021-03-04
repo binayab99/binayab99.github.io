@@ -5,16 +5,22 @@ footer {
   padding-right: 10rem;
   text-align: left;
 
+  @include breakpoint-down(medium) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   .top {
-    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .bottom {
     display: flex;
     justify-content: space-between;
-    // align-items: flex-start;
-    // justify-content: flex-start;
-    // align-content: flex-start;
+
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+    }
 
     > * {
       display: inline-flex;
@@ -33,6 +39,10 @@ footer {
       margin-right: 5rem;
       width: 21rem;
 
+      @include breakpoint-down(medium) {
+        width: 19rem;
+      }
+
       > img {
         height: 1.5rem;
         width: auto;
@@ -47,11 +57,19 @@ footer {
       display: flex;
       flex-direction: column;
 
+      @include breakpoint-down(medium) {
+        margin-bottom: 5rem;
+      }
+
       .phone {
         // height: 1rem;
         width: auto;
         padding-right: 2rem;
         margin-bottom: 1.5rem;
+
+        @include breakpoint-down(medium) {
+          margin-top: 1.5rem;
+        }
 
         > img {
           height: 0.3rem;
@@ -81,10 +99,17 @@ footer {
       }
     }
 
+    .list1 {
+      margin-bottom: 3rem;
+    }
+
     ion-icon {
-      font-size: 1.5rem;
+      font-size: 1rem;
       margin-right: 1rem;
       transition: color 300ms ease-in-out;
+      border: 1px solid white;
+      border-radius: 50%;
+      padding: 0.5rem;
 
       &:hover {
         color: $cyan;
@@ -93,6 +118,12 @@ footer {
 
     .social {
       margin-left: 3rem;
+
+      @include breakpoint-down(medium) {
+        margin-top: 3rem;
+        margin-left: 0;
+        align-self: center;
+      }
 
       > a {
         border-color: 1px solid white;
