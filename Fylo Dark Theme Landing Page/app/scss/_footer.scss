@@ -1,8 +1,8 @@
 footer {
   display: flex;
   flex-direction: column;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  background-color: $darkBlueFooter;
+  padding: 10rem 20rem;
   text-align: left;
 
   @include breakpoint-down(medium) {
@@ -110,9 +110,13 @@ footer {
       border: 1px solid white;
       border-radius: 50%;
       padding: 0.5rem;
+      transition-property: color, border;
+      transition-duration: 300ms;
+      transition-timing-function: ease-in-out;
 
       &:hover {
         color: $cyan;
+        border: 1px solid $cyan;
       }
     }
 
@@ -123,11 +127,6 @@ footer {
         margin-top: 3rem;
         margin-left: 0;
         align-self: center;
-      }
-
-      > a {
-        border-color: 1px solid white;
-        border-radius: 50%;
       }
     }
   }

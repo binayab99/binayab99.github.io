@@ -53,13 +53,29 @@ ul {
 }
 
 button {
+  position: relative;
   font-family: inherit;
-  background-image: linear-gradient(left, $cyan, $blue);
+  background-image: linear-gradient(to right, $cyan, $blue);
   color: $white;
   border: none;
   padding: 0.8rem 3rem;
   border-radius: 10rem;
-  transition: background-image 300ms ease-in-out;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient($cyan);
+    padding: 0.8rem 3rem;
+    border-radius: 10rem;
+    z-index: -1;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+  }
 
   @include breakpoint-down(small) {
     padding: 0.8rem 5rem;
@@ -69,9 +85,9 @@ button {
     outline: none;
   }
 
-  &:hover {
+  &:hover::before {
     cursor: pointer;
-    background-image: linear-gradient($cyan);
+    opacity: 1;
   }
 }
 
@@ -94,10 +110,4 @@ input {
     outline: none;
     color: $darkBlueIntroEmail;
   }
-}
-
-footer {
-  background-color: $darkBlueFooter;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
 }

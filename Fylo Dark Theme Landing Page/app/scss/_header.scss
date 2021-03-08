@@ -24,9 +24,17 @@
     justify-content: flex-end;
     align-items: center;
 
-    & > a:hover {
-      // border-bottom: 1px solid;
-      text-decoration: underline;
+    a::after {
+      content: "";
+      width: 0px;
+      height: 1px;
+      display: block;
+      background: $white;
+      transition: 300ms;
+    }
+
+    a:hover::after {
+      width: 100%;
     }
 
     & > a:not(:last-child) {

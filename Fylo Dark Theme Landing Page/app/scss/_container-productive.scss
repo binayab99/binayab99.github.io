@@ -41,12 +41,15 @@
 
     & > a {
       color: $cyan;
-      border-bottom: 1px solid;
+      border-bottom: 1px solid $cyan;
       padding-bottom: 0.3rem;
-      transition: color 300ms ease-in-out;
+      transition-property: color, border-bottom;
+      transition-duration: 300ms;
+      transition-timing-function: ease-in-out;
 
       &:hover {
         color: $white;
+        border-bottom: 1px solid $white;
       }
     }
   }
