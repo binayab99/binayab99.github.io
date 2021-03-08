@@ -1,0 +1,17 @@
+nav {
+  display: grid;
+  grid-template-columns: repeat (5 1fr);
+  grid-template-areas: "img" "link" "link" "link" "button";
+
+  > img {
+    grid-area: img;
+  }
+
+  > span {
+    grid-area: link;
+  }
+
+  > button {
+    grid-area: button;
+  }
+}

@@ -1,0 +1,2 @@
+html{font:100%;-webkit-box-sizing:border-box;box-sizing:border-box}*,*::before,*::after{-webkit-box-sizing:inherit;box-sizing:inherit}body{font-family:sans-serif;margin:3rem 9.5rem}nav{display:-ms-grid;display:grid;-ms-grid-columns:repeat 5 1fr;grid-template-columns:repeat 5 1fr;grid-template-areas:"img" "link" "link" "link" "button"}nav>img{-ms-grid-row:1;-ms-grid-column:1;grid-area:img}nav>span{-ms-grid-row:2;-ms-grid-row-span:3;-ms-grid-column:1;grid-area:link}nav>button{-ms-grid-row:5;-ms-grid-column:1;grid-area:button}
+/*# sourceMappingURL=style.css.map */
