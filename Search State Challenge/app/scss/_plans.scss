@@ -1,0 +1,9 @@
+.plans {
+  background: linear-gradient(
+    to bottom right,
+    $backgroundYellow,
+    rgba(0, 0, 0, 0),
+    $backgroundCyan
+  );
+  padding: 3rem 9.5rem;
+}

@@ -1,17 +1,81 @@
+header {
+  background: linear-gradient(
+    to bottom right,
+    $backgroundYellow,
+    rgba(0, 0, 0, 0),
+    $backgroundCyan
+  );
+  padding: 3rem 9.5rem;
+}
+
 nav {
   display: grid;
-  grid-template-columns: repeat (5 1fr);
-  grid-template-areas: "img" "link" "link" "link" "button";
+  grid-template-columns: repeat(5 auto);
+  grid-template-areas: "logo link1 link2 link3 button";
+  align-items: center;
 
   > img {
-    grid-area: img;
+    grid-area: logo;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid gray;
+    border-radius: 0.3rem;
   }
 
   > span {
-    grid-area: link;
+    text-align: center;
+
+    > :nth-child(1) {
+      grid-area: link1;
+    }
+
+    > :nth-child(2) {
+      grid-area: link2;
+    }
+
+    > :nth-child(3) {
+      grid-area: link3;
+    }
+  }
+}
+
+.hero {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat (2 auto);
+    grid-template-areas: "herotext heroimage";
+    align-items: center;
+
+    &__text {
+      grid-area: herotext;
+
+      > h1 {
+        font-size: 3rem;
+      }
+
+      > p:first-child {
+        display: inline-block;
+        background-color: $backgroundGreen;
+        color: $colorGreen;
+        padding: 0.5rem;
+        border-radius: 1rem;
+
+        > a {
+          color: $colorGreen;
+        }
+      }
+    }
+
+    &__image {
+      grid-area: heroimage;
+    }
   }
 
-  > button {
-    grid-area: button;
+  .social {
+    margin-top: 10.9375rem;
+    margin-bottom: 3rem;
+    text-align: right;
+    li {
+      display: inline-block;
+    }
   }
 }

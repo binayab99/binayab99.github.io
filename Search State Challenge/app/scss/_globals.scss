@@ -11,5 +11,23 @@ html {
 
 body {
   font-family: sans-serif;
-  margin: 3rem 9.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  grid-area: button;
+  border: none;
+  background-color: $backgroundPurple;
+  color: white;
+  padding: 1.5rem 1.125rem;
+  border-radius: 0.3rem;
+
+  > :hover {
+    cursor: pointer;
+  }
+
+  > :focus {
+    outline: none;
+  }
 }
