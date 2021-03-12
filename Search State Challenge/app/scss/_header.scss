@@ -74,6 +74,12 @@ nav {
     margin-top: 10.9375rem;
     margin-bottom: 3rem;
     text-align: right;
+
+    a {
+      color: black;
+      content: "\2022";
+    }
+
     li {
       display: inline-block;
     }
