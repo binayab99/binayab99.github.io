@@ -21,6 +21,10 @@ nav {
     border-radius: 0.3rem;
   }
 
+  > button {
+    max-width: 10.875rem;
+  }
+
   > span {
     text-align: center;
 
@@ -35,6 +39,11 @@ nav {
     > :nth-child(3) {
       grid-area: link3;
     }
+  }
+
+  .signup {
+    grid-area: button;
+    justify-self: right;
   }
 }
 

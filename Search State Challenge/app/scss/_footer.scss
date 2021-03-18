@@ -1,0 +1,36 @@
+.footer {
+  padding: 9.5rem 4.8125rem;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 2fr repeat (3, auto);
+    grid-template-areas: "col1 col2 col3 col4";
+    gap: 7.625rem;
+
+    .col1 {
+      grid-area: col1;
+
+      > img {
+        padding: 0.3rem 0.5rem;
+        border: 1px solid gray;
+        border-radius: 0.3rem;
+      }
+
+      > p {
+        max-width: 32rem;
+      }
+    }
+
+    .col2 {
+      grid-template: col2;
+    }
+
+    .col3 {
+      grid-template: col3;
+    }
+
+    .col4 {
+      grid-template: col4;
+    }
+  }
+}
