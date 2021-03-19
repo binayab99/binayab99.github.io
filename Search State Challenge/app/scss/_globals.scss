@@ -16,18 +16,14 @@ body {
 }
 
 button {
-  grid-area: button;
   border: none;
   background-color: $backgroundPurple;
   color: white;
   padding: 1.5rem 1.125rem;
   border-radius: 0.3rem;
+  cursor: pointer;
 
-  > :hover {
-    cursor: pointer;
-  }
-
-  > :focus {
+  :focus {
     outline: none;
   }
 }
@@ -38,6 +34,7 @@ a {
 }
 
 ul {
+  display: inline-block;
   padding: 0;
 }
 
