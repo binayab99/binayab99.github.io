@@ -4,6 +4,15 @@
 
     .tv {
       background: url(../img/tv.png);
+      position: relative;
+      width: 600px;
+      height: 500px;
+
+      video {
+        width: 320px;
+        height: 240px;
+        position: absolute;
+      }
     }
   }
 }
