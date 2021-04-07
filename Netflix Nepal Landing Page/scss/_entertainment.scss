@@ -1,0 +1,9 @@
+.entertainment {
+  &-enjoy {
+    display: flex;
+
+    .tv {
+      background: url(../img/tv.png);
+    }
+  }
+}

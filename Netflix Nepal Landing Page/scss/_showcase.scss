@@ -2,6 +2,7 @@
   position: relative;
   height: 650px;
   background: url("/img/background.jpg") no-repeat center center/cover;
+  border-bottom: 4px solid gray;
 
   &::after {
     position: absolute;
@@ -60,18 +61,23 @@
     }
 
     &-getstarted {
-      height: 3rem;
+      display: inline-block;
+      box-sizing: border-box;
+      font-size: 0; // Makes the child elements stick together
+
       .email {
         padding: 0.8rem;
         width: 20rem;
+        font-size: 1rem;
+        border: none;
       }
 
-      a {
+      button {
+        border: none;
+        padding: 0.8rem;
+        font-size: 1rem;
         background: $netflix-red;
-        padding: 0.8rem 1.5rem;
-        font-size: 1.3rem;
-        height: 100%;
-        margin: 0;
+        color: #fff;
       }
     }
   }
