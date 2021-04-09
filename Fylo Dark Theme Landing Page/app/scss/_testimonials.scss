@@ -8,14 +8,20 @@
 
   padding-top: 2rem;
 
-  background-image: url("/images/bg-quotes.png");
-  background-repeat: no-repeat;
-  background-position: 8rem 0;
-
   text-align: left;
 
   @include breakpoint-down(small) {
     background-position: 2.5rem 0;
+  }
+
+  &__left {
+    position: relative;
+
+    .quote {
+      position: absolute;
+      top: -15%;
+      left: -2%;
+    }
   }
 
   &__items {
@@ -27,8 +33,6 @@
     background-color: $darkBlueTestimonials;
 
     padding: 2.5rem 1.5rem 1.5rem 1.5rem;
-
-    z-index: 1;
 
     @include breakpoint-down(medium) {
       flex-basis: 60%;
