@@ -2,7 +2,7 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: $darkBlueFooter;
-  padding: 10rem 20rem;
+  padding: 10rem 10rem;
   text-align: left;
 
   @include breakpoint-down(medium) {
@@ -49,7 +49,7 @@ footer {
       }
 
       > a:hover {
-        font-weight: 700;
+        // font-weight: 700;
       }
     }
 
@@ -62,7 +62,6 @@ footer {
       }
 
       .phone {
-        // height: 1rem;
         width: auto;
         padding-right: 2rem;
         margin-bottom: 1.5rem;
@@ -76,7 +75,7 @@ footer {
         }
 
         > a:hover {
-          font-weight: 700;
+          // font-weight: 700;
         }
       }
 
@@ -85,7 +84,7 @@ footer {
         padding-right: 2rem;
 
         > a:hover {
-          font-weight: 700;
+          // font-weight: 700;
         }
       }
     }
@@ -95,7 +94,7 @@ footer {
       margin-bottom: 1rem;
 
       &:hover {
-        font-weight: 700;
+        // font-weight: 700;
       }
     }
 
