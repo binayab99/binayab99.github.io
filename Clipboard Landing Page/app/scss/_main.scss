@@ -55,17 +55,17 @@ main {
   &__blacklists {
     grid-area: blacklists;
 
-    background-image: url("/images/icon-blacklist.svg");
+    background-image: url("../../images/icon-blacklist.svg");
   }
 
   &__snippets {
     grid-area: snippets;
-    background-image: url("/images/icon-text.svg");
+    background-image: url("../../images/icon-text.svg");
   }
 
   &__preview {
     grid-area: preview;
-    background-image: url("/images/icon-preview.svg");
+    background-image: url("../../images/icon-preview.svg");
   }
 }
 
