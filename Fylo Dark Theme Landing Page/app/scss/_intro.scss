@@ -6,7 +6,7 @@
   background-size: contain;
 
   @include breakpoint-down(small) {
-    background-image: url("/images/bg-curvy-mobile.svg");
+    background-image: url("../../images/bg-curvy-mobile.svg");
     background-size: cover;
     background-position: bottom center;
   }
