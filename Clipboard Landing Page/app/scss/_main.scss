@@ -1,12 +1,17 @@
 main {
   padding: 5rem;
+
+  @include breakpoint-down(small) {
+    padding: 5rem 1rem;
+  }
 }
 
 .snippets {
   p {
     margin-left: auto;
     margin-right: auto;
-    max-width: 77%;
+
+    max-width: 80rem;
   }
 }
 
@@ -17,6 +22,12 @@ main {
   grid-template-areas: "image text";
 
   margin: 6rem 0;
+
+  @include breakpoint-down(small) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "image" "text";
+  }
 }
 
 .container__computer__image {
@@ -24,6 +35,12 @@ main {
 
   position: relative;
   left: -7rem;
+
+  @include breakpoint-down(small) {
+    width: 20rem;
+    left: 0;
+    margin: auto;
+  }
 }
 
 .container__computer__text {
@@ -32,6 +49,17 @@ main {
   text-align: left;
 
   padding-top: 4rem;
+
+  @include breakpoint-down(small) {
+    padding-top: 0;
+
+    text-align: center;
+
+    p {
+      max-width: 19rem;
+      margin: auto;
+    }
+  }
 }
 
 .container__computer__paragraph {
@@ -41,65 +69,99 @@ main {
   padding-right: 0;
 }
 
-.workflow__items {
-  justify-content: center;
-
-  display: grid;
-  grid-template-columns: minmax(auto, 20%) minmax(auto, 20%) minmax(auto, 20%);
-  grid-template-rows: 1fr;
-  grid-template-areas: "blacklists snippets preview";
-  gap: 2rem;
-
-  &__blacklists,
-  &__snippets,
-  &__preview {
-    background-repeat: no-repeat;
-    background-position: top;
-
-    padding-top: 3rem;
-  }
-
-  &__blacklists {
-    grid-area: blacklists;
-
-    background-image: url("../../images/icon-blacklist.svg");
-  }
-
-  &__snippets {
-    grid-area: snippets;
-    background-image: url("../../images/icon-text.svg");
-  }
-
-  &__preview {
-    grid-area: preview;
-    background-image: url("../../images/icon-preview.svg");
-  }
-}
-
 .access {
   p {
-    max-width: 76%;
+    max-width: 90%;
     margin: 0 auto 4rem auto;
+  }
+
+  img {
+    @include breakpoint-down(small) {
+      width: 20rem;
+    }
   }
 }
 
-.workflow__items p {
-  padding-left: 0;
-  padding-right: 0;
-}
+.workflow {
+  &__items {
+    justify-content: center;
 
-.workflow__partners {
-  display: flex;
+    display: grid;
+    grid-template-columns: minmax(auto, 22rem) minmax(auto, 22rem) minmax(
+        auto,
+        22rem
+      );
+    grid-template-rows: 1fr;
+    grid-template-areas: "blacklists snippets preview";
+    gap: 2rem;
 
-  justify-content: space-around;
-  align-items: center;
+    @include breakpoint-down(small) {
+      grid-template-columns: 1fr;
+      grid-template-areas: "blacklists" "snippets" "preview";
+    }
 
-  margin: 5rem auto;
+    p {
+      padding-left: 0;
+      padding-right: 0;
 
-  max-width: 70%;
+      @include breakpoint-down(small) {
+        max-width: 20rem;
+        margin: auto;
+      }
+    }
+
+    &__blacklists,
+    &__snippets,
+    &__preview {
+      background-repeat: no-repeat;
+      background-position: top;
+
+      padding-top: 3rem;
+    }
+
+    &__blacklists {
+      grid-area: blacklists;
+      background-image: url("../../images/icon-blacklist.svg");
+    }
+
+    &__snippets {
+      grid-area: snippets;
+      background-image: url("../../images/icon-text.svg");
+    }
+
+    &__preview {
+      grid-area: preview;
+      background-image: url("../../images/icon-preview.svg");
+    }
+  }
+
+  &__partners {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 5rem auto;
+
+    max-width: 70%;
+
+    @include breakpoint-down(small) {
+      flex-direction: column;
+
+      & > * {
+        margin-bottom: 3rem;
+      }
+    }
+  }
 }
 
 .download {
   margin: 5rem auto;
-  max-width: 77%;
+  max-width: 80rem;
+
+  p {
+    @include breakpoint-down(small) {
+      width: 20rem;
+    }
+  }
 }
