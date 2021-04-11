@@ -27,6 +27,14 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "image" "text";
+
+    &__image {
+      grid-area: image;
+    }
+
+    &__text {
+      grid-area: text;
+    }
   }
 }
 
@@ -98,6 +106,18 @@ main {
     @include breakpoint-down(small) {
       grid-template-columns: 1fr;
       grid-template-areas: "blacklists" "snippets" "preview";
+
+      &__blacklists {
+        grid-area: blacklists;
+      }
+
+      &__snippets {
+        grid-area: snippets;
+      }
+
+      &__preview {
+        grid-area: preview;
+      }
     }
 
     p {
