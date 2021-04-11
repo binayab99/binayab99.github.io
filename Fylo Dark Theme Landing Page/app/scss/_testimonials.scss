@@ -22,6 +22,10 @@
       top: -15%;
       left: -2%;
       z-index: -1;
+
+      @include breakpoint-down(small) {
+        left: 3%;
+      }
     }
   }
 
@@ -29,11 +33,13 @@
     flex-grow: 1;
     flex-basis: 33.33%;
 
-    max-width: 21rem;
+    max-width: 24rem;
 
     background-color: $darkBlueTestimonials;
 
     padding: 2.5rem 1.5rem 2.5rem 1.5rem;
+
+    box-shadow: 12px 12px 2px 1px rgba(46, 46, 46, 0.2);
 
     @include breakpoint-down(medium) {
       flex-basis: 60%;
@@ -62,35 +68,18 @@
         position: relative;
         width: 100%;
 
-        h4 {
-          // position: relative;
-          // top: 0;
+        p {
+          font-weight: 700;
           margin: 0;
         }
 
         span {
           position: absolute;
           bottom: 0;
-
-          p {
-            margin: 0;
-            font-size: 0.8rem;
-          }
+          margin: 0;
+          font-size: 0.8rem;
         }
       }
-
-      // & > img {
-      //   border-radius: 50%;
-      //   width: 1.5rem;
-      // }
-
-      // & > h4 {
-      //   display: inline-block;
-      // }
-
-      // & > p {
-      //   display: inline-block;
-      // }
     }
   }
 }

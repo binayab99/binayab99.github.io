@@ -37,25 +37,23 @@ footer {
 
     .location {
       margin-right: 5rem;
-      width: 21rem;
+      width: 25rem;
 
       @include breakpoint-down(medium) {
-        width: 19rem;
+        width: auto;
+        margin-right: 0;
       }
 
       > img {
         height: 1.5rem;
         width: auto;
       }
-
-      > a:hover {
-        // font-weight: 700;
-      }
     }
 
     .contact {
       display: flex;
       flex-direction: column;
+      min-width: 15rem;
 
       @include breakpoint-down(medium) {
         margin-bottom: 5rem;
@@ -73,29 +71,18 @@ footer {
         > img {
           height: 0.3rem;
         }
-
-        > a:hover {
-          // font-weight: 700;
-        }
       }
 
       .email {
         height: 1rem;
         padding-right: 2rem;
-
-        > a:hover {
-          // font-weight: 700;
-        }
       }
     }
 
     li {
       list-style-type: none;
       margin-bottom: 1rem;
-
-      &:hover {
-        // font-weight: 700;
-      }
+      min-width: 5.5rem;
     }
 
     .list1 {

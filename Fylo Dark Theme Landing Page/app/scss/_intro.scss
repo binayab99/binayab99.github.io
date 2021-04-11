@@ -13,6 +13,34 @@
 
   padding-bottom: 10rem;
 
+  & > a {
+    position: relative;
+    background-image: linear-gradient(to right, $cyan, $blue);
+    padding: 0.8rem 3rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient($cyan);
+      padding: 0.8rem 3rem;
+      border-radius: 10rem;
+      z-index: -1;
+      transition: opacity 0.5s ease-in-out;
+      opacity: 0;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+  }
+
   & > img {
     width: 32rem;
 
@@ -22,21 +50,23 @@
   }
   &__text {
     & > h1 {
-      line-height: 2;
+      font-size: 2.5rem;
+      // line-height: 1.5;
       padding-top: 2rem;
       padding-bottom: 2rem;
-      max-width: 35rem;
+      max-width: 44rem;
       margin: auto;
 
       @include breakpoint-down(small) {
         max-width: 18rem;
+        font-size: 1.4rem;
       }
     }
 
     & > p {
       line-height: 1.7;
       padding-bottom: 2rem;
-      max-width: 26rem;
+      max-width: 30rem;
       margin: auto;
 
       @include breakpoint-down(small) {

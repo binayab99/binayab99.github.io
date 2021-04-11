@@ -24,11 +24,12 @@
   &__text {
     flex-grow: 1;
     flex-basis: 50%;
-    max-width: 30rem;
+    max-width: 38rem;
     text-align: left;
     padding-left: 2rem;
 
-    > h1 {
+    > h2 {
+      font-size: 2rem;
       @include breakpoint-down(small) {
         font-size: 1.16rem;
       }
