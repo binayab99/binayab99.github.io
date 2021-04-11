@@ -110,6 +110,7 @@
       &__twitter,
       &__instagram {
         & svg path {
+          cursor: pointer;
           transition: fill 300ms ease-in-out;
         }
 
