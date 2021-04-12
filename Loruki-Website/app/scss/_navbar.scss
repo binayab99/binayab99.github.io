@@ -1,0 +1,30 @@
+.navbar {
+  background-color: $primary-color;
+  color: white;
+  height: 4.375rem;
+
+  .flex {
+    justify-content: space-between;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  a {
+    color: white;
+    padding: 10px;
+    margin: 0 5px;
+
+    &:hover {
+      border-bottom: 2px solid white;
+    }
+  }
+
+  .container {
+    max-width: 68.75rem;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 2.5rem;
+  }
+}
