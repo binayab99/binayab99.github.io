@@ -51,6 +51,11 @@ $light-color: #f4f4f4;
   justify-content: center;
   align-items: center;
   height: 100%;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
 }
 
 .grid-3 {
