@@ -1,5 +1,5 @@
 // Tablets & under
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .grid,
   .showcase .grid,
   .stats .grid,
@@ -20,6 +20,13 @@
     &-form {
       justify-self: center;
       margin: auto;
+    }
+  }
+
+  .cli {
+    .grid > *:first-child {
+      grid-column: 1;
+      grid-row: 1;
     }
   }
 }
