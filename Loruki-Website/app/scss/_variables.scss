@@ -4,6 +4,8 @@ $primary-color: #047aed;
 $secondary-color: #1c3fa8;
 $dark-color: #002240;
 $light-color: #f4f4f4;
+$success-color: #5cb85c;
+$error-color: #d9534f;
 
 .container {
   max-width: 1100px;
@@ -35,6 +37,28 @@ $light-color: #f4f4f4;
 
 .text-center {
   text-align: center;
+}
+
+// Alert
+.alert {
+  background-color: $light-color;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 15px 0;
+
+  i {
+    margin-right: 10px;
+  }
+
+  &-success {
+    background-color: $success-color;
+    color: white;
+  }
+
+  &-error {
+    background-color: $error-color;
+    color: white;
+  }
 }
 
 .flex {
@@ -184,11 +208,13 @@ $light-color: #f4f4f4;
   background-color: $secondary-color;
   color: white;
 }
+
 .bg-dark,
 .btn-dark {
   background-color: $dark-color;
   color: white;
 }
+
 .bg-light,
 .btn-light {
   background-color: $light-color;
@@ -204,4 +230,21 @@ $light-color: #f4f4f4;
 .bg-light a,
 .btn-light a {
   color: white;
+}
+
+// Text colors
+.text-primary {
+  color: $primary-color !important;
+}
+
+.text-secondary {
+  color: $secondary-color !important;
+}
+
+.text-dark {
+  color: $dark-color !important;
+}
+
+.text-light {
+  color: $light-color !important;
 }
