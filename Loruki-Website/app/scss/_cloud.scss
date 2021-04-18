@@ -1,4 +1,6 @@
 .cloud {
+  animation: slideInFromBottom 1.2s ease-in;
+
   .grid {
     grid-template-columns: 4fr 3fr;
   }

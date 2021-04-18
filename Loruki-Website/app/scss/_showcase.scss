@@ -18,6 +18,10 @@
     gap: 30px;
   }
 
+  &-text {
+    animation: slideInFromLeft 1s ease-in;
+  }
+
   &-form {
     position: relative;
     top: 60px;
@@ -26,6 +30,7 @@
     padding: 40px;
     z-index: 100;
     justify-self: flex-end;
+    animation: slideInFromRight 1s ease-in;
 
     .form-control {
       margin: 30px 0;

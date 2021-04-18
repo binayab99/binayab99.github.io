@@ -5,6 +5,7 @@
 
   .flex {
     justify-content: space-between;
+    animation: slideInFromTop 1s ease-in;
   }
 
   ul {
